@@ -30,17 +30,6 @@
 
             {{ include('book_room/_form.html.twig') }}
 
-            {#<from>
-                <div class="form-group">
-                    <label>Check in date</label>
-                    <input class="form-control" id="checkInDate" type='datetime-local' required><br>
-                    <label>Check out date</label>
-                    <input class="form-control" id="checkOutDate" type='datetime-local' required><br>
-
-                    <input class="btn btn-primary" type="submit">
-                </div>
-            </from>#}
-
         </div>
     {% endfor %}
     <script>
@@ -50,9 +39,9 @@
         // console.log(currentdate)
 
         var today = new Date();
-        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        var time = today.getHours()+3 + ":" + today.getMinutes();
-        var dateTime = date+' '+time;
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + 3 + ":" + today.getMinutes();
+        var dateTime = date + ' ' + time;
 
         console.log(dateTime);
         document.getElementById('checkInDate').value = dateTime;
