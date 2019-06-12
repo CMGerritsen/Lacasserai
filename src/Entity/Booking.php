@@ -44,6 +44,16 @@ class Booking
      */
     private $user_id;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Betaal")
+     */
+    private $betaal;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $betaal_methode;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -93,6 +103,30 @@ class Booking
     public function setUserId(?user $user_id): self
     {
         $this->user_id = $user_id;
+
+        return $this;
+    }
+
+    public function getBetaal(): ?betaal
+    {
+        return $this->betaal;
+    }
+
+    public function setBetaal(?betaal $betaal): self
+    {
+        $this->betaal = $betaal;
+
+        return $this;
+    }
+
+    public function getBetaalMethode(): ?string
+    {
+        return $this->betaal_methode;
+    }
+
+    public function setBetaalMethode(string $betaal_methode): self
+    {
+        $this->betaal_methode = $betaal_methode;
 
         return $this;
     }

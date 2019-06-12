@@ -30,10 +30,10 @@ class BookRoomController extends AbstractController
             $user = $em->getRepository('App:User')->find($user_id);
             $book_room->setUserId($user);
             $book_room->setRoomId($room_id);
-            $room_id->setAvailable(0);
+//            $room_id->setAvailable(0);
 
             $em->persist($book_room);
-            $em->persist($room_id);
+//            $em->persist($room_id);
             $em->flush();
 
             return $this->redirectToRoute('index');
