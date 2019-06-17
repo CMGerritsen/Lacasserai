@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Betaal;
 use App\Entity\Booking;
 use App\Entity\Room;
 use App\Form\BookingRoomType;
@@ -25,15 +26,19 @@ class BookRoomController extends AbstractController
         $form = $this->createForm(BookingRoomType::class, $book_room);
         $form->handleRequest($request);
 
+        $betaal = new Betaal();
+
         if($form->isSubmitted() && $form->isValid()) {
             $user_id = $this->getUser()->getId();
             $user = $em->getRepository('App:User')->find($user_id);
             $book_room->setUserId($user);
             $book_room->setRoomId($room_id);
 //            $room_id->setAvailable(0);
+//            $betaal->setUser($user_id);
 
             $em->persist($book_room);
 //            $em->persist($room_id);
+//            $em->persist($betaal);
             $em->flush();
 
             return $this->redirectToRoute('index');

@@ -19,7 +19,7 @@ class Booking
     /**
      * @ORM\Column(type="date")
      */
-    private $checkinDate;
+    public $checkinDate;
 
     /**
      * @ORM\Column(type="date")
@@ -36,13 +36,13 @@ class Booking
      * @ORM\ManyToOne(targetEntity="App\Entity\Room")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $room_id;
+    public $room_id;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\User")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $user_id;
+    public $user_id;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Betaal")

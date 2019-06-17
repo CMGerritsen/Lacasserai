@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775d1bc9-c8ce-49de-b713-42de646bc2ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/sidebar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BookRoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookRoomController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/BookingRoomType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/BookingRoomType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book_room/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book_room/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/room/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/room/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,47 +25,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Booking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1056">
+              <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="24" column="95" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="95" />
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#34#70#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/sidebar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-              <folding>
-                <marker date="1560337944284" expanded="true" signature="486:2346" ph="..." />
-              </folding>
+            <state relative-caret-position="403">
+              <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Form/BookingType.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/CheckInListController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="432">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding>
+                <element signature="e#34#99#0#PHP" expanded="true" />
+                <element signature="e#492#505#1#PHP" expanded="true" />
+                <element signature="e#588#601#1#PHP" expanded="true" />
+                <element signature="e#580#611#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/check_in_list/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1051">
+              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Form/BookingRoomType.php">
+        <entry file="file://$PROJECT_DIR$/templates/booking/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-              <folding>
-                <element signature="e#28#51#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="523">
+              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -74,6 +106,7 @@
       <find>onKernelException</find>
       <find>form-group</find>
       <find>fieldset</find>
+      <find>check</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,9 +130,6 @@
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Room.php" />
         <option value="$PROJECT_DIR$/src/Repository/RoomRepository.php" />
-        <option value="$PROJECT_DIR$/templates/booking/index.html.twig" />
-        <option value="$PROJECT_DIR$/templates/room/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/BookRoomController.php" />
         <option value="$PROJECT_DIR$/src/Controller/BookingController.php" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
@@ -111,13 +141,19 @@
         <option value="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-        <option value="$PROJECT_DIR$/templates/default/index.html.twig" />
-        <option value="$PROJECT_DIR$/templates/book_room/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/book_room/_form.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Entity/Booking.php" />
         <option value="$PROJECT_DIR$/src/Form/BookingRoomType.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/default/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/book_room/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/room/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/BookRoomController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Booking.php" />
+        <option value="$PROJECT_DIR$/templates/booking/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/CheckInListController.php" />
+        <option value="$PROJECT_DIR$/templates/sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/templates/check_in_list/index.html.twig" />
       </list>
     </option>
   </component>
@@ -246,6 +282,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,18 +299,30 @@
               <item name="Lacasserai" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lacasserai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lacasserai" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lacasserai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lacasserai" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lacasserai" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lacasserai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lacasserai" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="booking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lacasserai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lacasserai" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="check_in_list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lacasserai" type="b2602c69:ProjectViewProjectNode" />
@@ -285,7 +334,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,12 +390,16 @@
       <workItem from="1559719886742" duration="14232000" />
       <workItem from="1560071814280" duration="236000" />
       <workItem from="1560098294222" duration="758000" />
-      <workItem from="1560322449000" duration="10762000" />
+      <workItem from="1560322449000" duration="14714000" />
+      <workItem from="1560408017682" duration="1297000" />
+      <workItem from="1560754230148" duration="33000" />
+      <workItem from="1560754288122" duration="8482000" />
+      <workItem from="1560767165702" duration="2349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110342000" />
+    <option name="totallyTimeSpent" value="126455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,7 +414,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21140939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15637584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,41 +434,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bundles/FosUserBundle/views/Group/new.html.twig" />
-    <entry file="file://$PROJECT_DIR$/templates/bundles/FosUserBundle/views/Security/login.html.twig" />
     <entry file="file://$PROJECT_DIR$/templates/bundles/FosUserBundle/views/Security/login_content.html.twig" />
     <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -512,13 +534,6 @@
     <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Group/new.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/RoomController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/booking/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -592,50 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/room/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BookRoomController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="38" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/booking/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#34#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -681,34 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding>
-            <element signature="e#12#37#0#Twig" expanded="true" />
-            <element signature="e#84#132#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -720,13 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/book_room/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -761,23 +697,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Booking.php">
+    <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+        <state relative-caret-position="120">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/FOSUserBundle/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <marker date="1560337944284" expanded="true" signature="486:2346" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/BookingType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="144">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/BookingRoomType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="384">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
             <element signature="e#28#51#0#PHP" expanded="true" />
@@ -785,23 +745,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/book_room/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state relative-caret-position="48">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/room/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
-            <marker date="1560337944284" expanded="true" signature="486:2346" ph="..." />
+            <element signature="e#113#130#0#Twig" expanded="true" />
+            <element signature="e#1513#1521#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1261">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#34#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RoomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-888">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BookRoomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="e#34#56#0#PHP" expanded="true" />
+            <element signature="e#610#620#1#PHP" expanded="true" />
+            <element signature="e#689#699#1#PHP" expanded="true" />
+            <element signature="e#1039#1049#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="24" column="95" selection-start-line="24" selection-start-column="95" selection-end-line="24" selection-end-column="95" />
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#34#70#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/booking/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CheckInListController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#34#99#0#PHP" expanded="true" />
+            <element signature="e#492#505#1#PHP" expanded="true" />
+            <element signature="e#588#601#1#PHP" expanded="true" />
+            <element signature="e#580#611#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/check_in_list/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1051">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
         </state>
       </provider>
     </entry>

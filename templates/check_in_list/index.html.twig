@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CheckInListController!{% endblock %}
+
+{% block body %}
+
+    {% include 'sidebar.html.twig' %}
+
+    <div class="content">
+
+        <h3>Checkin lijst</h3>
+
+        {% if booking == NULL %}
+            <p>Geen bookingen</p>
+        {% else %}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Kamer</th>
+                <th>Kamer nummer</th>
+                <th>Gebruiker</th>
+                <th>Checkin datum</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for booking in booking %}
+                <tr>
+                    <td>{{ booking.room_id }}</td>
+                    <td>{{ booking.room_id.room_nr }}</td>
+                    <td>{{ booking.user_id }}</td>
+                    <td>{{ booking.checkinDate ? booking.checkinDate|date('d-m-Y') : '' }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <h3>Checkout Lijst</h3>
+
+        {% if booking == NULL %}
+            <p>Geen bookingen</p>
+        {% else %}
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Kamer</th>
+                <th>Kamer nummer</th>
+                <th>Gebruiker</th>
+                <th>Checkin datum</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for booking2 in booking2 %}
+                <tr>
+                    <td>{{ booking2.room_id }}</td>
+                    <td>{{ booking2.room_id.room_nr }}</td>
+                    <td>{{ booking2.user_id }}</td>
+                    <td>{{ booking2.checkoutDate ? booking2.checkoutDate|date('d-m-Y') : '' }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+{% endblock %}

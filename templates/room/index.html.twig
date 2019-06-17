@@ -3,10 +3,14 @@
 {% block title %}Room index{% endblock %}
 
 {% block body %}
-    <h1>Room index</h1>
 
-    <table class="table">
-        <thead>
+    {% include 'sidebar.html.twig' %}
+
+    <div class="content">
+        <h1>Room index</h1>
+
+        <table class="table">
+            <thead>
             <tr>
                 <th>Id</th>
                 <th>name</th>
@@ -19,32 +23,33 @@
                 <th>Available</th>
                 <th>actions</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for room in rooms %}
-            <tr>
-                <td>{{ room.id }}</td>
-                <td>{{ room.name }}</td>
-                <td>{{ room.roomNr }}</td>
-                <td>{{ room.price }}</td>
-                <td>{{ room.bed }}</td>
-                <td>{{ room.description }}</td>
-                <td>{{ room.imageName }}</td>
-                <td>{{ room.imageFile }}</td>
-                <td>{{ room.available ? 'Yes' : 'No' }}</td>
-                <td>
-                    <a href="{{ path('room_show', {'id': room.id}) }}">show</a>
-                    <a href="{{ path('room_edit', {'id': room.id}) }}">edit</a>
-                    <a style="color:red" href="{{ path('room_delete', {'id': room.id}) }}">delete</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% for room in rooms %}
+                <tr>
+                    <td>{{ room.id }}</td>
+                    <td>{{ room.name }}</td>
+                    <td>{{ room.roomNr }}</td>
+                    <td>{{ room.price }}</td>
+                    <td>{{ room.bed }}</td>
+                    <td>{{ room.description }}</td>
+                    <td>{{ room.imageName }}</td>
+                    <td>{{ room.imageFile }}</td>
+                    <td>{{ room.available ? 'Yes' : 'No' }}</td>
+                    <td>
+                        <a href="{{ path('room_show', {'id': room.id}) }}">show</a>
+                        <a href="{{ path('room_edit', {'id': room.id}) }}">edit</a>
+                        <a style="color:red" href="{{ path('room_delete', {'id': room.id}) }}">delete</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="7">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
 
-    <a href="{{ path('room_new') }}">Create new</a>
+        <a href="{{ path('room_new') }}">Create new</a>
+    </div>
 {% endblock %}

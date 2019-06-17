@@ -3,10 +3,14 @@
 {% block title %}Booking index{% endblock %}
 
 {% block body %}
-    <h1>Booking index</h1>
 
-    <table class="table">
-        <thead>
+    {% include 'sidebar.html.twig' %}
+
+    <div class="content">
+        <h1>Booking index</h1>
+
+        <table class="table">
+            <thead>
             <tr>
                 <th>Id</th>
                 <th>CheckinDate</th>
@@ -15,29 +19,30 @@
                 <th>Room</th>
                 <th>actions</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for booking in bookings %}
-            <tr>
-                <td>{{ booking.id }}</td>
-                <td>{{ booking.checkinDate ? booking.checkinDate|date('Y-m-d') : '' }}</td>
-                <td>{{ booking.checkoutDate ? booking.checkoutDate|date('Y-m-d') : '' }}</td>
-                <td>{{ booking.userId }}</td>
-                <td>{{ booking.roomId }}</td>
-                <td>
-                    <a href="{{ path('booking_show', {'id': booking.id}) }}">show</a>
-                    <a href="{{ path('booking_edit', {'id': booking.id}) }}">edit</a>
-                    <a href="{{ path('booking_delete', {'id': booking.id}) }}">delete</a>
+            </thead>
+            <tbody>
+            {% for booking in bookings %}
+                <tr>
+                    <td>{{ booking.id }}</td>
+                    <td>{{ booking.checkinDate ? booking.checkinDate|date('Y-m-d') : '' }}</td>
+                    <td>{{ booking.checkoutDate ? booking.checkoutDate|date('Y-m-d') : '' }}</td>
+                    <td>{{ booking.userId }}</td>
+                    <td>{{ booking.roomId }}</td>
+                    <td>
+                        <a href="{{ path('booking_show', {'id': booking.id}) }}">show</a>
+                        <a href="{{ path('booking_edit', {'id': booking.id}) }}">edit</a>
+                        <a href="{{ path('booking_delete', {'id': booking.id}) }}">delete</a>
 
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="4">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="4">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
 
-    <a href="{{ path('booking_new') }}">Create new</a>
+        <a href="{{ path('booking_new') }}">Create new</a>
+    </div>
 {% endblock %}
