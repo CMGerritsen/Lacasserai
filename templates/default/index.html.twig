@@ -4,6 +4,10 @@
 
 {% block stylesheets %}
     <style>
+        body{
+            overflow-x: hidden;
+        }
+
         .carousel-item {
             height: 65vh;
             min-height: 350px;
@@ -17,43 +21,95 @@
 {% endblock %}
 
 {% block body %}
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bellagio_Casino_and_Hotel_at_Night.jpg/1280px-Bellagio_Casino_and_Hotel_at_Night.jpg')">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3 style="margin-top: -30%;" class="display-3">Hotel La Casserai</h3>
-{#                        <p class="lead">Het beste hotel met een goede prijs en een goede nacht rust.</p>#}
-                    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active"
+                 style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bellagio_Casino_and_Hotel_at_Night.jpg/1280px-Bellagio_Casino_and_Hotel_at_Night.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="margin-top: -30%;" class="display-3">Hotel La Casserai</h3>
+                    {#                        <p class="lead">Het beste hotel met een goede prijs en een goede nacht rust.</p>#}
                 </div>
             </div>
         </div>
-<br>
+    </div>
+
     <div class="container">
+        <div class="row">
+            <div class="col-12" style="margin-left: 20%">
+                <form action="{{ path('viewroom') }}" method="post">
+                    <input style="width: 250px" type="date" name="BeginDate">
+                    <input style="width: 250px" type="date" name="EndDate">
+                    <input class="btn btn-primary" type="submit" name="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br>
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            {% for room in room %}#}
+{#                {% if room.available == 1 %}#}
+{#                    <div class="card-deck mb-3 text-center col-6">#}
+{#                        <div class="card mb-4 shadow-sm">#}
+{#                            <div class="card-header">#}
+{#                                <h4 class="my-0 font-weight-normal">{{ room.name }}</h4>#}
+{#                            </div>#}
+{#                            <div class="card-body">#}
+{#                                <img src={{ vich_uploader_asset(room, 'imageFile') }} width="100%">#}
+{#                                <h1 class="card-title pricing-card-title">&euro;{{ room.price }}#}
+{#                                    <small>/night</small>#}
+{#                                </h1>#}
+{#                                <ul class="list-unstyled mt-3 mb-4">#}
+{#                                    <li>Bedden: {{ room.bed }}</li>#}
+{#                                    <li>{{ room.description }}</li>#}
+{#                                </ul>#}
+{#                                <a style="text-decoration: none" href="/bookroom/{{ room.id }}">#}
+{#                                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Booken#}
+{#                                    </button>#}
+{#                                </a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                {% endif %}#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+
+<div class="container">
     <div class="row">
-    {% for room in room %}
-        {% if room.available == 1 %}
-            <div class="card-deck mb-3 text-center col-6">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">{{ room.name }}</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src={{ vich_uploader_asset(room, 'imageFile') }} width="100%">
-                        <h1 class="card-title pricing-card-title">&euro;{{ room.price }}<small>/night</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>Bedden: {{ room.bed }}</li>
-                            <li>{{ room.description }}</li>
-                        </ul>
-                        <a style="text-decoration: none" href="/bookroom/{{ room.id }}">
-                            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Booken</button>
-                        </a>
-                    </div>
+        <div class="col-xl-4 col-md-7 mb-5">
+            <div class="card border-0 shadow">
+                <img src="{{ asset('images/nh_den_haag-113-restaurant.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Ons restaurant</h5>
+                    <div class="card-text text-black-50">Eet hier elke avond het best eten</div>
                 </div>
             </div>
-                {% endif %}
-    {% endfor %}
+        </div>
+
+        <div class="col-xl-4 col-md-7 mb-5">
+            <div class="card border-0 shadow">
+                <img src="{{ asset('images/nh_den_haag-111-buffet_breakfast.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Ons ontbijt bufet</h5>
+                    <div class="card-text text-black-50">Eet hier elke ochtend het best eten</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-7 mb-5">
+            <div class="card border-0 shadow">
+                <img src="{{ asset('images/nh_den_haag-100-hotel_facilities.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">De sportschool</h5>
+                    <div class="card-text text-black-50">Sport hier alleen of met vrienden</div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
+</div>
+    <br>
 
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>

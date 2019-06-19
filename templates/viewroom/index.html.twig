@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ViewroomController!{% endblock %}
+
+{% block body %}
+    <br>
+    <div class="container">
+        <div class="row">
+            {% for room in room %}
+                <div class="card-deck mb-3 text-center col-6">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">{{ room.name }}</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src={{ vich_uploader_asset(room, 'imageFile') }} width="100%">
+                            <h1 class="card-title pricing-card-title">&euro;{{ room.price }}
+                                <small>/night</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bedden: {{ room.bed }}</li>
+                                <li>{{ room.description }}</li>
+                            </ul>
+                            <a style="text-decoration: none" href="/bookroom/{{ room.id }}">
+                                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Booken</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+{% endblock %}
