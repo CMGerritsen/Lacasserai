@@ -12,6 +12,9 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="/">La Casserai</a>
+        {% if app.user %}
+            <a style="text-decoration: none; color: rgba(255,255,255,.5);" class="nav-link" href="/mybooking">Mijn Booking</a>
+        {% endif %}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,6 +55,7 @@
 </header>
 {% block body %}{% endblock %}
 {% block javascripts %}
+    <script src="jquery-3.4.0.min.js"></script>
     <script src="//cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
     <script>
         // CKEDITOR.replace( 'room[description]' );

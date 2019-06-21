@@ -4,7 +4,7 @@
 
 {% block stylesheets %}
     <style>
-        body{
+        body {
             overflow-x: hidden;
         }
 
@@ -33,82 +33,90 @@
         </div>
     </div>
 
+    <br>
+
     <div class="container">
-        <div class="row">
-            <div class="col-12" style="margin-left: 20%">
-                <form action="{{ path('viewroom') }}" method="post">
-                    <input style="width: 250px" type="date" name="BeginDate">
-                    <input style="width: 250px" type="date" name="EndDate">
-                    <input class="btn btn-primary" type="submit" name="submit">
-                </form>
+        <form style="margin-left: 15%" action="{{ path('viewroom') }}" method="post">
+            <div class="row">
+                <div class="col">
+                    <input id="BeginDate" class="form-control" type="date" name="BeginDate">
+                </div>
+                <div class="col">
+                    <input class="form-control" type="date" name="EndDate">
+                </div>
+                <div class="col">
+                    <input class="btn btn-primary" type="submit" name="submit" value="Zoeken">
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <br>
-{#    <div class="container">#}
-{#        <div class="row">#}
-{#            {% for room in room %}#}
-{#                {% if room.available == 1 %}#}
-{#                    <div class="card-deck mb-3 text-center col-6">#}
-{#                        <div class="card mb-4 shadow-sm">#}
-{#                            <div class="card-header">#}
-{#                                <h4 class="my-0 font-weight-normal">{{ room.name }}</h4>#}
-{#                            </div>#}
-{#                            <div class="card-body">#}
-{#                                <img src={{ vich_uploader_asset(room, 'imageFile') }} width="100%">#}
-{#                                <h1 class="card-title pricing-card-title">&euro;{{ room.price }}#}
-{#                                    <small>/night</small>#}
-{#                                </h1>#}
-{#                                <ul class="list-unstyled mt-3 mb-4">#}
-{#                                    <li>Bedden: {{ room.bed }}</li>#}
-{#                                    <li>{{ room.description }}</li>#}
-{#                                </ul>#}
-{#                                <a style="text-decoration: none" href="/bookroom/{{ room.id }}">#}
-{#                                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Booken#}
-{#                                    </button>#}
-{#                                </a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                {% endif %}#}
-{#            {% endfor %}#}
-{#        </div>#}
-{#    </div>#}
+    {#    <div class="container">#}
+    {#        <div class="row">#}
+    {#            {% for room in room %}#}
+    {#                {% if room.available == 1 %}#}
+    {#                    <div class="card-deck mb-3 text-center col-6">#}
+    {#                        <div class="card mb-4 shadow-sm">#}
+    {#                            <div class="card-header">#}
+    {#                                <h4 class="my-0 font-weight-normal">{{ room.name }}</h4>#}
+    {#                            </div>#}
+    {#                            <div class="card-body">#}
+    {#                                <img src={{ vich_uploader_asset(room, 'imageFile') }} width="100%">#}
+    {#                                <h1 class="card-title pricing-card-title">&euro;{{ room.price }}#}
+    {#                                    <small>/night</small>#}
+    {#                                </h1>#}
+    {#                                <ul class="list-unstyled mt-3 mb-4">#}
+    {#                                    <li>Bedden: {{ room.bed }}</li>#}
+    {#                                    <li>{{ room.description }}</li>#}
+    {#                                </ul>#}
+    {#                                <a style="text-decoration: none" href="/bookroom/{{ room.id }}">#}
+    {#                                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Booken#}
+    {#                                    </button>#}
+    {#                                </a>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                {% endif %}#}
+    {#            {% endfor %}#}
+    {#        </div>#}
+    {#    </div>#}
 
-<div class="container">
-    <div class="row">
-        <div class="col-xl-4 col-md-7 mb-5">
-            <div class="card border-0 shadow">
-                <img src="{{ asset('images/nh_den_haag-113-restaurant.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Ons restaurant</h5>
-                    <div class="card-text text-black-50">Eet hier elke avond het best eten</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-7 mb-5">
+                <div class="card border-0 shadow">
+                    <img src="{{ asset('images/nh_den_haag-113-restaurant.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Ons restaurant</h5>
+                        <div class="card-text text-black-50">Eet hier elke avond het best eten</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-xl-4 col-md-7 mb-5">
-            <div class="card border-0 shadow">
-                <img src="{{ asset('images/nh_den_haag-111-buffet_breakfast.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Ons ontbijt bufet</h5>
-                    <div class="card-text text-black-50">Eet hier elke ochtend het best eten</div>
+            <div class="col-xl-4 col-md-7 mb-5">
+                <div class="card border-0 shadow">
+                    <img src="{{ asset('images/nh_den_haag-111-buffet_breakfast.jpg') }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Ons ontbijt buffet</h5>
+                        <div class="card-text text-black-50">Eet hier elke ochtend het best eten</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-xl-4 col-md-7 mb-5">
-            <div class="card border-0 shadow">
-                <img src="{{ asset('images/nh_den_haag-100-hotel_facilities.jpg') }}" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">De sportschool</h5>
-                    <div class="card-text text-black-50">Sport hier alleen of met vrienden</div>
+            <div class="col-xl-4 col-md-7 mb-5">
+                <div class="card border-0 shadow">
+                    <img src="{{ asset('images/nh_den_haag-100-hotel_facilities.jpg') }}" class="card-img-top"
+                         alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">De sportschool</h5>
+                        <div class="card-text text-black-50">Sport hier alleen of met vrienden</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <br>
 
     <footer class="container">

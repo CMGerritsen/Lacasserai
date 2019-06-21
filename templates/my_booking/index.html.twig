@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MyBookingController!{% endblock %}
+
+{% block body %}
+    <table class="table">
+    <thead>
+    <tr>
+        <th>Kamer</th>
+        <th>Kamer naam</th>
+        <th>Checkin datum</th>
+    </tr>
+    </thead>
+        <tbody>
+    {% for myBooking in myBooking %}
+        <tr>
+            <td><img src={{ vich_uploader_asset(myBooking.room_id, 'imageFile') }} width="200px"></td>
+            <td>{{ myBooking.room_id }}</td>
+            <td>{{ myBooking.checkinDate ? myBooking.checkinDate|date('d-m-Y') : '' }}</td>
+        </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
